@@ -1,0 +1,22 @@
+/* src/styles/custom.css */
+.trapezoid-left {
+  clip-path: polygon(0% 0%, 20% 0, 100% 100%, 0% 100%);
+  background-color: transparent; /* Adjust color as needed */
+  width: 30%;
+  height: 60vh;
+  margin-right: -4px; /* Adjust as needed to eliminate any remaining gap */
+}
+
+.trapezoid-right {
+  clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 50% 100%);
+  background-color: rgba(19, 79, 138, 0.9); /* Adjust color as needed */
+  width: calc(70% + 4px); /* Adjust to offset the negative margin */
+  height: 60vh;
+}
+
+#bg-video {
+  object-fit: fill;
+  width: full;
+  height: 60vh;
+  width: 100%;
+}

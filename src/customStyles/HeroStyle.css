@@ -1,0 +1,54 @@
+.sliderHero {
+  position: relative;
+  width: 800px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.sliderHero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease;
+}
+
+.image1 {
+  transform: translateX(100%);
+  animation: slideIn 1s 1s forwards; /* 3s duration, 1s delay */
+}
+
+.image2 {
+  transform: translateX(100%);
+  animation: slideIn 1s 1.8s forwards; /* 3s delay, 1s duration */
+}
+
+.image3 {
+  transform: translateX(100%);
+  animation: slideIn 1s 5s forwards; /* 3s delay, 1s duration */
+}
+
+.image4 {
+  transform: translateX(100%);
+  animation: slideIn 1s 5.8s forwards; /* 3s delay, 1s duration */
+}
+
+.image5 {
+  transform: translateX(100%);
+  animation: slideIn 1s 10s forwards; /* 3s delay, 1s duration */
+}
+
+.image6 {
+  transform: translateX(100%);
+  animation: slideIn 1s 10.8s forwards; /* 3s delay, 1s duration */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
